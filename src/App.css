@@ -1,0 +1,27 @@
+.note {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 1.5rem;
+}
+
+.note-body {
+  width: 100%;
+  max-width: 420px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+
+  font-family: inherit;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.87);
+
+  caret-color: rgba(255, 255, 255, 0.87);
+}
+
+.note-body::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
