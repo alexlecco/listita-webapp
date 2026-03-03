@@ -77,6 +77,7 @@ export default function App() {
 
   return (
     <div className="note">
+      <h1 className="note-title">Listita</h1>
       <textarea
         ref={ref}
         className="note-body"
