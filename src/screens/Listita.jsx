@@ -1,11 +1,13 @@
-import { useRef, useEffect } from 'react'
-import { useNote } from './useNote'
-import './App.css'
+import { useRef, useEffect, useState } from 'react'
+import { useNote } from '../hooks/useNote'
+import CompareScreen from './CompareScreen'
+import './Listita.css'
 
 const PREFIX = '- '
 
-export default function App() {
-  const { body, setBody } = useNote()
+export default function Listita() {
+  const { body, setBody, items } = useNote()
+  const [screen, setScreen] = useState('note')
   const ref = useRef(null)
 
   // Auto-resize textarea height to fit content
@@ -75,6 +77,10 @@ export default function App() {
     setBody(lines.join('\n'))
   }
 
+  if (screen === 'compare') {
+    return <CompareScreen items={items} onBack={() => setScreen('note')} />
+  }
+
   return (
     <div className="note">
       <h1 className="note-title">Listita</h1>
@@ -87,6 +93,9 @@ export default function App() {
         spellCheck={false}
         placeholder={PREFIX}
       />
+      <div className="button-container">
+        <button className="button" onClick={() => setScreen('compare')}>comparar precios</button>
+      </div>
     </div>
   )
 }

@@ -1,0 +1,198 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 1.5rem;
+}
+
+.note-title {
+  margin: 0 0 2rem 0;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.note-body {
+  width: 100%;
+  max-width: 420px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+
+  font-family: inherit;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.87);
+
+  caret-color: rgba(255, 255, 255, 0.87);
+  height: 100vh;
+}
+
+.note-body::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Compare screen */
+.compare-screen {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.compare-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.compare-header .note-title {
+  margin: 0;
+  flex: 1;
+}
+
+.back-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.87);
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.add-store-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.store-input {
+  flex: 1;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding: 8px 12px;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.store-input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.store-input:focus {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.add-store-row .button {
+  margin-top: 0;
+}
+
+.compare-hint {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.compare-table-wrapper {
+  overflow-x: auto;
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.compare-table th,
+.compare-table td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.compare-table th {
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.compare-table .item-col {
+  text-align: left;
+  white-space: nowrap;
+}
+
+.price-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  width: 80px;
+}
+
+.price-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.total-row td {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cheapest {
+  background: rgba(34, 197, 94, 0.25) !important;
+  color: #86efac !important;
+}
+
+.cheapest strong {
+  color: #86efac;
+}
+
+.remove-store {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 6px;
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.remove-store:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
