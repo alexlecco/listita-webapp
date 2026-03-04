@@ -1,0 +1,608 @@
+[
+  {
+    "name": "Leche entera",
+    "price": 839,
+    "brand": "La Serenísima",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Leche descremada",
+    "price": 1059,
+    "brand": "Sancor",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Yogur entero frutado",
+    "price": 822,
+    "brand": "Danone",
+    "presentation": "500g"
+  },
+  {
+    "name": "Queso cremoso",
+    "price": 2912,
+    "brand": "La Serenísima",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Queso de barra",
+    "price": 3071,
+    "brand": "Finlandia",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Manteca",
+    "price": 1839,
+    "brand": "La Serenísima",
+    "presentation": "500g"
+  },
+  {
+    "name": "Crema de leche",
+    "price": 1453,
+    "brand": "Sancor",
+    "presentation": "500g"
+  },
+  {
+    "name": "Dulce de leche repostero",
+    "price": 2050,
+    "brand": "La Lechera",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Dulce de leche familiar",
+    "price": 2475,
+    "brand": "Ilolay",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Huevos",
+    "price": 2722,
+    "brand": "Granja del Sol",
+    "presentation": "12 unidades"
+  },
+  {
+    "name": "Pan lactal blanco",
+    "price": 1885,
+    "brand": "Bimbo",
+    "presentation": "500g"
+  },
+  {
+    "name": "Pan lactal integral",
+    "price": 1880,
+    "brand": "Fargo",
+    "presentation": "500g"
+  },
+  {
+    "name": "Galletitas de agua",
+    "price": 1040,
+    "brand": "Cerealitas",
+    "presentation": "500g"
+  },
+  {
+    "name": "Galletitas dulces rellenas",
+    "price": 833,
+    "brand": "Oreo",
+    "presentation": "500g"
+  },
+  {
+    "name": "Galletitas dulces simples",
+    "price": 1106,
+    "brand": "Diversión",
+    "presentation": "500g"
+  },
+  {
+    "name": "Fideos spaghetti",
+    "price": 938,
+    "brand": "Matarazzo",
+    "presentation": "500g"
+  },
+  {
+    "name": "Fideos moñitos",
+    "price": 981,
+    "brand": "Lucchetti",
+    "presentation": "500g"
+  },
+  {
+    "name": "Fideos coditos",
+    "price": 467,
+    "brand": "Don Vicente",
+    "presentation": "500g"
+  },
+  {
+    "name": "Arroz largo fino",
+    "price": 694,
+    "brand": "Gallo",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Arroz doble carolina",
+    "price": 810,
+    "brand": "Molinos Ala",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Harina 000",
+    "price": 611,
+    "brand": "Cañuelas",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Harina 0000",
+    "price": 535,
+    "brand": "Pureza",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Azúcar",
+    "price": 1086,
+    "brand": "Ledesma",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Sal fina",
+    "price": 826,
+    "brand": "Celusal",
+    "presentation": "500g"
+  },
+  {
+    "name": "Aceite de girasol",
+    "price": 2022,
+    "brand": "Cocinero",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Aceite de maíz",
+    "price": 2075,
+    "brand": "Mazola",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Aceite de oliva",
+    "price": 4537,
+    "brand": "Nucete",
+    "presentation": "500g"
+  },
+  {
+    "name": "Vinagre de manzana",
+    "price": 958,
+    "brand": "Doménico",
+    "presentation": "500g"
+  },
+  {
+    "name": "Salsa de tomate",
+    "price": 577,
+    "brand": "Arcor",
+    "presentation": "500g"
+  },
+  {
+    "name": "Tomates perita en lata",
+    "price": 726,
+    "brand": "La Campagnola",
+    "presentation": "500g"
+  },
+  {
+    "name": "Mayonesa",
+    "price": 1882,
+    "brand": "Hellmann's",
+    "presentation": "500g"
+  },
+  {
+    "name": "Ketchup",
+    "price": 1487,
+    "brand": "Heinz",
+    "presentation": "500g"
+  },
+  {
+    "name": "Mostaza",
+    "price": 1589,
+    "brand": "Savora",
+    "presentation": "500g"
+  },
+  {
+    "name": "Mermelada de frutilla",
+    "price": 1937,
+    "brand": "Arcor",
+    "presentation": "500g"
+  },
+  {
+    "name": "Mermelada de durazno",
+    "price": 1633,
+    "brand": "La Campagnola",
+    "presentation": "500g"
+  },
+  {
+    "name": "Café molido",
+    "price": 3374,
+    "brand": "Nescafé",
+    "presentation": "500g"
+  },
+  {
+    "name": "Café instantáneo",
+    "price": 3965,
+    "brand": "Dolca",
+    "presentation": "500g"
+  },
+  {
+    "name": "Té en saquitos",
+    "price": 1482,
+    "brand": "Lipton",
+    "presentation": "50 unidades"
+  },
+  {
+    "name": "Yerba mate",
+    "price": 2700,
+    "brand": "Taragüi",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Yerba mate con palo",
+    "price": 3117,
+    "brand": "Rosamonte",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Yerba mate suave",
+    "price": 2703,
+    "brand": "Amanda",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Cacao en polvo",
+    "price": 2683,
+    "brand": "Nesquik",
+    "presentation": "500g"
+  },
+  {
+    "name": "Agua mineral sin gas",
+    "price": 1100,
+    "brand": "Villavicencio",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Agua mineral con gas",
+    "price": 817,
+    "brand": "Eco de los Andes",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Gaseosa cola",
+    "price": 1622,
+    "brand": "Coca-Cola",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Gaseosa lima limón",
+    "price": 1556,
+    "brand": "Sprite",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Gaseosa naranja",
+    "price": 2003,
+    "brand": "Fanta",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Jugo en polvo naranja",
+    "price": 714,
+    "brand": "Tang",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Jugo en polvo multifrutal",
+    "price": 384,
+    "brand": "Clight",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Jugo exprimido de naranja",
+    "price": 1468,
+    "brand": "Citric",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Cerveza rubia lata",
+    "price": 899,
+    "brand": "Quilmes",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Cerveza artesanal rubia",
+    "price": 2193,
+    "brand": "Patagonia",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Vino tinto malbec",
+    "price": 3921,
+    "brand": "Trapiche",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Vino blanco torrontés",
+    "price": 3125,
+    "brand": "Santa Julia",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Pechugas de pollo",
+    "price": 3906,
+    "brand": "Granja del Sol",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Carne molida especial",
+    "price": 5716,
+    "brand": "Friar",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Milanesas de carne",
+    "price": 6554,
+    "brand": "Friar",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Salchicha para hot dog",
+    "price": 1347,
+    "brand": "Vienissima",
+    "presentation": "500g"
+  },
+  {
+    "name": "Salame",
+    "price": 4020,
+    "brand": "Cagnoli",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Jamón cocido",
+    "price": 4985,
+    "brand": "Paladini",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Panceta ahumada",
+    "price": 3941,
+    "brand": "Paladini",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Atún en aceite",
+    "price": 1312,
+    "brand": "La Campagnola",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Sardinas en aceite",
+    "price": 1398,
+    "brand": "Noel",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Papa",
+    "price": 1090,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Cebolla",
+    "price": 793,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Tomate redondo",
+    "price": 1993,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Zanahoria",
+    "price": 672,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Lechuga",
+    "price": 1395,
+    "brand": "A granel",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Zapallo",
+    "price": 675,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Banana",
+    "price": 1174,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Manzana roja",
+    "price": 1351,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Mandarina",
+    "price": 1795,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Naranja",
+    "price": 1400,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Limón",
+    "price": 812,
+    "brand": "A granel",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Arvejas en lata",
+    "price": 1329,
+    "brand": "La Campagnola",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Choclo en lata",
+    "price": 440,
+    "brand": "Arcor",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Lentejas",
+    "price": 1440,
+    "brand": "Lucchetti",
+    "presentation": "500g"
+  },
+  {
+    "name": "Garbanzos",
+    "price": 1037,
+    "brand": "Lucchetti",
+    "presentation": "500g"
+  },
+  {
+    "name": "Porotos",
+    "price": 890,
+    "brand": "Inca",
+    "presentation": "500g"
+  },
+  {
+    "name": "Pure de papas instantáneo",
+    "price": 835,
+    "brand": "Maggi",
+    "presentation": "500g"
+  },
+  {
+    "name": "Caldo de pollo en cubos",
+    "price": 639,
+    "brand": "Knorr",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Caldo de carne en cubos",
+    "price": 901,
+    "brand": "Maggi",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Sopa crema de choclo",
+    "price": 782,
+    "brand": "Knorr",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Papas fritas en sobre",
+    "price": 852,
+    "brand": "Lay's",
+    "presentation": "500g"
+  },
+  {
+    "name": "Papas fritas en sobre",
+    "price": 963,
+    "brand": "Pringles",
+    "presentation": "500g"
+  },
+  {
+    "name": "Maní salado",
+    "price": 909,
+    "brand": "Natuchips",
+    "presentation": "500g"
+  },
+  {
+    "name": "Alfajor de chocolate",
+    "price": 927,
+    "brand": "Milka",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Alfajor triple",
+    "price": 827,
+    "brand": "Havanna",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Alfajor de maicena",
+    "price": 100,
+    "brand": "Jorgito",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Chocolate con leche",
+    "price": 1381,
+    "brand": "Milka",
+    "presentation": "500g"
+  },
+  {
+    "name": "Chocolate amargo",
+    "price": 1210,
+    "brand": "Felfort",
+    "presentation": "500g"
+  },
+  {
+    "name": "Helado familiar",
+    "price": 4367,
+    "brand": "Freddo",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Helado individual",
+    "price": 2761,
+    "brand": "Grido",
+    "presentation": "500g"
+  },
+  {
+    "name": "Desodorante roll-on",
+    "price": 1888,
+    "brand": "Rexona",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Shampoo",
+    "price": 2355,
+    "brand": "Pantene",
+    "presentation": "500g"
+  },
+  {
+    "name": "Acondicionador",
+    "price": 2805,
+    "brand": "Elvive",
+    "presentation": "500g"
+  },
+  {
+    "name": "Jabón de tocador",
+    "price": 545,
+    "brand": "Dove",
+    "presentation": "unidad"
+  },
+  {
+    "name": "Jabón en polvo",
+    "price": 3368,
+    "brand": "Ala",
+    "presentation": "1 kilo"
+  },
+  {
+    "name": "Detergente líquido",
+    "price": 1479,
+    "brand": "Magistral",
+    "presentation": "500g"
+  },
+  {
+    "name": "Lavandina",
+    "price": 906,
+    "brand": "Ayudín",
+    "presentation": "1 litro"
+  },
+  {
+    "name": "Papel higiénico x4",
+    "price": 1792,
+    "brand": "Familia",
+    "presentation": "unidad"
+  }
+]
