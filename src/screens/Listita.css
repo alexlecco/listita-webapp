@@ -1,10 +1,10 @@
 .note {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  display: flex;
+  height: 100vh;
   align-items: flex-start;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 5rem;
+  overflow-y: auto;
 }
 
 .note-title {
@@ -29,7 +29,6 @@
   color: rgba(255, 255, 255, 0.87);
 
   caret-color: rgba(255, 255, 255, 0.87);
-  height: 100vh;
 }
 
 .note-body::placeholder {
@@ -48,9 +47,16 @@
 }
 
 .button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  background: #202124;
+}
+
+.button-container .button {
+  margin-top: 0;
   width: 100%;
 }
 
