@@ -10,9 +10,9 @@ export default function CompareScreen({ items, onBack }) {
 
       <div className="cards-list">
         {items.length === 0 && <p className="compare-hint">Agregá ítems a la lista para comparar.</p>}
-        {results.map(({ item, prices, minPrice }) => (
+        {results.map(({ item, matchedName, prices, minPrice }) => (
           <div key={item} className="item-card">
-            <p className="item-card-name">{item}</p>
+            <p className="item-card-name">{matchedName}</p>
             <div className="store-prices">
               {prices.map(({ label, price }) => (
                 <div key={label} className={`store-chip ${price === minPrice && price !== null ? 'cheapest' : ''}`}>

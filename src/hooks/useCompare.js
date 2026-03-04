@@ -19,11 +19,16 @@ export function useCompare(items) {
         (p.brand && normalize(p.brand).includes(term)) ||
         (p.presentation && normalize(p.presentation).includes(term))
       )
-      return { label: store.label, price: match?.price ?? null }
+      const matchedName = match
+        ? [match.name, match.brand, match.presentation ? `de ${match.presentation}` : null].filter(Boolean).join(' ')
+        : null
+      return { label: store.label, price: match?.price ?? null, matchedName }
     })
     const validPrices = prices.filter(p => p.price !== null).map(p => p.price)
     const minPrice = validPrices.length ? Math.min(...validPrices) : null
-    return { item, prices, minPrice }
+    const matchedName = prices.find(p => p.matchedName)?.matchedName ?? item
+    
+    return { item, matchedName, prices, minPrice }
   })
   return { results, stores: STORES.map(s => s.label) }
 }
