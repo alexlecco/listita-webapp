@@ -83,7 +83,10 @@ export default function Listita() {
 
   return (
     <div className="note">
-      <h1 className="note-title">Listita</h1>
+      <div className="title-row">
+        <h1 className="note-title">Listita</h1>
+        <button className="clear-button" onClick={() => setBody(PREFIX)} title="Borrar lista">limpiar</button>
+      </div>
       <textarea
         ref={ref}
         className="note-body"
@@ -94,7 +97,7 @@ export default function Listita() {
         placeholder={PREFIX}
       />
       <div className="button-container">
-        <button className="button" onClick={() => setScreen('compare')}>comparar precios</button>
+        <button className="button" onClick={() => setScreen('compare')} disabled={items.length === 0}>comparar precios</button>
       </div>
     </div>
   )
