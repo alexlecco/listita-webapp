@@ -16,7 +16,7 @@ export default function Listita() {
     if (!el) return
     el.style.height = 'auto'
     el.style.height = el.scrollHeight + 'px'
-  }, [body])
+  }, [body, screen])
 
   // Place cursor at end on mount
   useEffect(() => {
