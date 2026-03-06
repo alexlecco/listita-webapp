@@ -1,91 +1,93 @@
-import { useRef, useEffect, useState } from 'react'
-import { useNote } from '../hooks/useNote'
-import CompareScreen from './CompareScreen'
-import './Listita.css'
+import { useRef, useEffect, useState } from 'react';
+import { useNote } from '../hooks/useNote';
+import CompareScreen from './CompareScreen';
+import './Listita.css';
 
-const PREFIX = '- '
+const PREFIX = '- ';
 
 export default function Listita() {
-  const { body, setBody, items } = useNote()
-  const [screen, setScreen] = useState('note')
-  const ref = useRef(null)
+  const { body, setBody, items } = useNote();
+  const [screen, setScreen] = useState('note');
+  const ref = useRef(null);
 
   // Auto-resize textarea height to fit content
   useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    el.style.height = 'auto'
-    el.style.height = el.scrollHeight + 'px'
-  }, [body, screen])
+    const el = ref.current;
+    if (!el) return;
+    el.style.height = 'auto';
+    el.style.height = el.scrollHeight + 'px';
+  }, [body, screen]);
 
   // Place cursor at end on mount
   useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    el.focus()
-    el.selectionStart = el.selectionEnd = el.value.length
-  }, [])
+    const el = ref.current;
+    if (!el) return;
+    el.focus();
+    el.selectionStart = el.selectionEnd = el.value.length;
+  }, []);
 
   function handleKeyDown(e) {
-    const el = ref.current
-    if (!el) return
+    const el = ref.current;
+    if (!el) return;
 
     if (e.key === 'Enter') {
-      e.preventDefault()
-      const { selectionStart, selectionEnd } = el
-      const before = body.slice(0, selectionStart)
-      const after = body.slice(selectionEnd)
-      const newBody = before + '\n' + PREFIX + after
-      setBody(newBody)
+      e.preventDefault();
+      const { selectionStart, selectionEnd } = el;
+      const before = body.slice(0, selectionStart);
+      const after = body.slice(selectionEnd);
+      const newBody = before + '\n' + PREFIX + after;
+      setBody(newBody);
 
       // Move cursor after the new "- "
       requestAnimationFrame(() => {
-        el.selectionStart = el.selectionEnd = selectionStart + 1 + PREFIX.length
-      })
+        el.selectionStart = el.selectionEnd = selectionStart + 1 + PREFIX.length;
+      });
     }
 
     if (e.key === 'Backspace') {
-      const { selectionStart, selectionEnd } = el
-      if (selectionStart !== selectionEnd) return
+      const { selectionStart, selectionEnd } = el;
+      if (selectionStart !== selectionEnd) return;
 
       // If cursor is right after "- " at start of a line, remove the whole line
-      const lineStart = body.lastIndexOf('\n', selectionStart - 1) + 1
-      const lineContent = body.slice(lineStart, selectionStart)
+      const lineStart = body.lastIndexOf('\n', selectionStart - 1) + 1;
+      const lineContent = body.slice(lineStart, selectionStart);
       if (lineContent === PREFIX) {
-        e.preventDefault()
-        const before = body.slice(0, lineStart > 0 ? lineStart - 1 : 0)
-        const after = body.slice(selectionStart)
-        const newBody = lineStart > 0 ? before + after : PREFIX + after.slice(PREFIX.length)
-        setBody(newBody)
+        e.preventDefault();
+        const before = body.slice(0, lineStart > 0 ? lineStart - 1 : 0);
+        const after = body.slice(selectionStart);
+        const newBody = lineStart > 0 ? before + after : PREFIX + after.slice(PREFIX.length);
+        setBody(newBody);
         requestAnimationFrame(() => {
-          el.selectionStart = el.selectionEnd = Math.max(0, lineStart - 1)
-        })
+          el.selectionStart = el.selectionEnd = Math.max(0, lineStart - 1);
+        });
       }
     }
   }
 
   function handleChange(e) {
-    let value = e.target.value
+    let value = e.target.value;
 
     // Ensure every line starts with "- "
-    const lines = value.split('\n').map(line => {
-      if (line === '') return PREFIX
-      if (!line.startsWith(PREFIX)) return PREFIX + line.replace(/^-\s*/, '')
-      return line
-    })
+    const lines = value.split('\n').map((line) => {
+      if (line === '') return PREFIX;
+      if (!line.startsWith(PREFIX)) return PREFIX + line.replace(/^-\s*/, '');
+      return line;
+    });
 
-    setBody(lines.join('\n'))
+    setBody(lines.join('\n'));
   }
 
   if (screen === 'compare') {
-    return <CompareScreen items={items} onBack={() => setScreen('note')} />
+    return <CompareScreen items={items} onBack={() => setScreen('note')} />;
   }
 
   return (
     <div className="note">
       <div className="title-row">
         <h1 className="note-title">Listita</h1>
-        <button className="clear-button" onClick={() => setBody(PREFIX)} title="Borrar lista">limpiar</button>
+        <button className="clear-button" onClick={() => setBody(PREFIX)} title="Borrar lista">
+          limpiar
+        </button>
       </div>
       <textarea
         ref={ref}
@@ -97,8 +99,14 @@ export default function Listita() {
         placeholder={PREFIX}
       />
       <div className="button-container">
-        <button className="button" onClick={() => setScreen('compare')} disabled={items.length === 0}>comparar precios</button>
+        <button
+          className="button"
+          onClick={() => setScreen('compare')}
+          disabled={items.length === 0}
+        >
+          comparar precios
+        </button>
       </div>
     </div>
-  )
+  );
 }

@@ -26,7 +26,12 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.cards-list { display: flex; flex-direction: column; gap: 0.75rem; width: 100%; }
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
 
 .item-card {
   background: #2a2b2e;
@@ -34,9 +39,16 @@
   padding: 1rem;
 }
 
-.item-card-name { font-size: 1rem; margin: 0 0 0.75rem 0; color: rgba(255,255,255,0.87); }
+.item-card-name {
+  font-size: 1rem;
+  margin: 0 0 0.75rem 0;
+  color: rgba(255, 255, 255, 0.87);
+}
 
-.store-prices { display: flex; gap: 0.5rem; }
+.store-prices {
+  display: flex;
+  gap: 0.5rem;
+}
 
 .store-chip {
   flex: 1;
@@ -48,13 +60,27 @@
   padding: 0.5rem;
 }
 
-.store-label { font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-bottom: 2px; }
-.store-price { font-size: 1rem; font-weight: 600; color: rgba(255,255,255,0.87); }
+.store-label {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2px;
+}
+.store-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.87);
+}
 
 .cheapest {
   background: #22c55e;
 }
 .cheapest .store-label,
-.cheapest .store-price { color: white; }
+.cheapest .store-price {
+  color: white;
+}
 
-.compare-hint { color: rgba(255,255,255,0.4); text-align: center; margin-top: 2rem; }
+.compare-hint {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-top: 2rem;
+}

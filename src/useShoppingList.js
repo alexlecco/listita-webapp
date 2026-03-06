@@ -1,46 +1,46 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-const STORAGE_KEY = 'shopping-list'
+const STORAGE_KEY = 'shopping-list';
 
 function loadFromStorage() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    return raw ? JSON.parse(raw) : []
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : [];
   } catch {
-    return []
+    return [];
   }
 }
 
 export function useShoppingList() {
-  const [items, setItems] = useState(loadFromStorage)
+  const [items, setItems] = useState(loadFromStorage);
 
   useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(items))
-  }, [items])
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+  }, [items]);
 
   function addItem(text) {
-    const trimmed = text.trim()
-    if (!trimmed) return
-    setItems(prev => [...prev, { id: Date.now(), text: trimmed, checked: false }])
+    const trimmed = text.trim();
+    if (!trimmed) return;
+    setItems((prev) => [...prev, { id: Date.now(), text: trimmed, checked: false }]);
   }
 
   function toggleItem(id) {
-    setItems(prev =>
-      prev.map(item => item.id === id ? { ...item, checked: !item.checked } : item)
-    )
+    setItems((prev) =>
+      prev.map((item) => (item.id === id ? { ...item, checked: !item.checked } : item))
+    );
   }
 
   function removeItem(id) {
-    setItems(prev => prev.filter(item => item.id !== id))
+    setItems((prev) => prev.filter((item) => item.id !== id));
   }
 
   function clearChecked() {
-    setItems(prev => prev.filter(item => !item.checked))
+    setItems((prev) => prev.filter((item) => !item.checked));
   }
 
   function clearAll() {
-    setItems([])
+    setItems([]);
   }
 
-  return { items, addItem, toggleItem, removeItem, clearChecked, clearAll }
+  return { items, addItem, toggleItem, removeItem, clearChecked, clearAll };
 }
