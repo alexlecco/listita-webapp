@@ -1,0 +1,27 @@
+.update-prompt {
+  position: fixed;
+  bottom: 70px;
+  left: 1rem;
+  right: 1rem;
+  background: #4285f4;
+  color: white;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.update-prompt button {
+  background: white;
+  color: #4285f4;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}

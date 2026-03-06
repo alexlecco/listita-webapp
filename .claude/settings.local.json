@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm run:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(convert:*)",
+      "Bash(python3:*)",
+      "Bash(rsvg-convert:*)"
     ]
   }
 }
