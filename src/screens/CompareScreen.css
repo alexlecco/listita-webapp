@@ -1,14 +1,12 @@
-.compare-header {
+.note {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
-  margin-bottom: 2rem;
+  justify-content: flex-start;
 }
 
-.compare-header .note-title {
+.note .note-title {
   margin: 0;
-  flex: 1;
+  flex: none;
 }
 
 .back-button {
@@ -31,6 +29,7 @@
   flex-direction: column;
   gap: 0.75rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .item-card {
