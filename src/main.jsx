@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import Listita from './screens/Listita.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import './index.css';
+import Listita from './screens/Listita.jsx';
+import UpdatePrompt from './components/UpdatePrompt.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Listita />
-  </StrictMode>,
-)
+    <UpdatePrompt />
+  </StrictMode>
+);

@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded rectangle -->
+  <rect width="512" height="512" rx="128" fill="#2196F3"/>
+
+  <!-- Paper/list background -->
+  <rect x="128" y="96" width="256" height="320" rx="16" fill="white"/>
+
+  <!-- List lines and checkboxes -->
+  <!-- Item 1 - checked -->
+  <rect x="160" y="144" width="24" height="24" rx="4" fill="#4CAF50"/>
+  <path d="M166 156L171 161L178 150" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="200" y="148" width="152" height="16" rx="4" fill="#E0E0E0"/>
+
+  <!-- Item 2 - checked -->
+  <rect x="160" y="192" width="24" height="24" rx="4" fill="#4CAF50"/>
+  <path d="M166 204L171 209L178 198" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="200" y="196" width="120" height="16" rx="4" fill="#E0E0E0"/>
+
+  <!-- Item 3 - unchecked -->
+  <rect x="160" y="240" width="24" height="24" rx="4" fill="white" stroke="#BDBDBD" stroke-width="2"/>
+  <rect x="200" y="244" width="136" height="16" rx="4" fill="#E0E0E0"/>
+
+  <!-- Item 4 - unchecked -->
+  <rect x="160" y="288" width="24" height="24" rx="4" fill="white" stroke="#BDBDBD" stroke-width="2"/>
+  <rect x="200" y="292" width="104" height="16" rx="4" fill="#E0E0E0"/>
+
+  <!-- Item 5 - unchecked -->
+  <rect x="160" y="336" width="24" height="24" rx="4" fill="white" stroke="#BDBDBD" stroke-width="2"/>
+  <rect x="200" y="340" width="144" height="16" rx="4" fill="#E0E0E0"/>
+</svg>
