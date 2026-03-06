@@ -15,6 +15,8 @@ export default defineConfig({
         description: 'Tu lista del super',
         theme_color: '#202124',
         background_color: '#202124',
+        start_url: '/',
+        scope: '/',
         display: 'standalone',
         icons: [
           { src: 'listita.svg', sizes: 'any', type: 'image/svg+xml' },
