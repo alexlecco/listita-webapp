@@ -12,7 +12,7 @@ export default function CompareScreen({ items, onBack }) {
         {items.length === 0 && (
           <p className="compare-hint">Agregá ítems a la lista para comparar.</p>
         )}
-        {results.map(({ item, matchedName, prices, minPrice }) => (
+        {results.filter(({ minPrice }) => minPrice !== null).map(({ item, matchedName, prices, minPrice }) => (
           <div key={item} className="item-card">
             <p className="item-card-name">{matchedName}</p>
             <div className="store-prices">
